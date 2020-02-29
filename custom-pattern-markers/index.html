@@ -8,8 +8,12 @@
 
 <body>
   <a-scene embedded="" arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+  <a-assets>
+    <img id="cat" src="assets/babykitty.png">
+    <img id="stripes" src="assets/stripes.png">
+  </a-assets>
     <a-marker type="pattern" url="assets/Nike_400.patt">
-      <a-box position="0 0.5 0" material="color: yellow;"></a-box>
+      <a-image src="#stripes" width="1.5" height="3" rotation="90 0 0"></a-image>
     </a-marker>
     <a-entity camera=""></a-entity>
   </a-scene>
